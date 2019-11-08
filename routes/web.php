@@ -20,9 +20,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('getUser/{id}', 'UsersController@show');
+Route::get('/getUser/{id}', 'UsersController@show');
 
-Route::get('getUsers', 'UsersController@index');
+Route::get('/getUsers', 'UsersController@index');
 
 Route::post('/addUser', 'UsersController@store');
 
@@ -30,5 +30,5 @@ Route::put('/updateUser/{id}', 'UsersController@update');
 
 Route::delete('/delUser/{id}', 'UsersController@destroy');
 
-Route::get('findUser/{nombre}', 'UsersController@search');
+Route::get('/findUser/{nombre}', 'UsersController@search');
 
